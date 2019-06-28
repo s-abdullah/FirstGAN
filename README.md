@@ -3,7 +3,7 @@
 GAN's basically consist of three main component:
 1. Discriminative Network
 2. Generative Network
-3. Respective Loss and BackProp
+3. Respective Loss
 
 
 ## 1. Discriminative Network
@@ -13,6 +13,19 @@ The only difference in the Discriminator is that instead of predicting the class
 ## 2. Generative Network
 
 
+## 3. Loss
+From the Original paper we see that the we need to do stachastic gradient ascent on the following fro the discrminator since its a binary predictor:
+![alt text][dloss]
+
+And for the generator the loss would be a descent of the following: 
+![alt text][gloss]
+
+And as the Paper states, the overall mathematical equation comes out to this minimax game:
+![alt text][game]
+
+So finally we can get the following pseudo-code for the simple GAN:
+![alt text][pseudo]
+
 ## Resources
 [Original Paper on GAN by Ian GoodFellow](https://arxiv.org/pdf/1406.2661.pdf)
 
@@ -20,3 +33,8 @@ The only difference in the Discriminator is that instead of predicting the class
 
 [Turoial#2 from Skymind that was refernce](https://skymind.ai/wiki/generative-adversarial-network-gan)
 
+
+[gloss]: https://github.com/s-abdullah/FirstGAN/blob/master/images/gen.png 
+[pseudo]: https://github.com/s-abdullah/FirstGAN/blob/master/images/pseudo.png 
+[dloss]: https://github.com/s-abdullah/FirstGAN/blob/master/images/disc.png 
+[game]: https://github.com/s-abdullah/FirstGAN/blob/master/images/minimax.png 
