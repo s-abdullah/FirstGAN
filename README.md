@@ -11,7 +11,7 @@ The simplest part of GAN is the discriminative network. This is the neural netwo
 The only difference in the Discriminator is that instead of predicting the class, it will be binary classification i.e. whether its a "True" example or "False".
 
 ## 2. Generative Network
-
+The generator network is more interesting. The input to the generator is a latent variale vector which the network will learn to transform into a good "fake". So the ouput od the network should be example the same size and value range as the input to the discriminator.
 
 ## 3. Loss
 From the Original paper we see that the we need to do stachastic gradient ascent on the following fro the discrminator 
@@ -31,6 +31,12 @@ So finally we can get the following pseudo-code for the simple GAN:
 
 ![alt text][pseudo]
 
+We will use binary cross entropy loss for both. This is very simply explained in Tutorial#1. 
+
+![alt text][bce]
+
+Replace Y = 1 for Discriminator and Y = 0 for generator. (Mx = min of negative)
+
 ## Resources
 [Original Paper on GAN by Ian GoodFellow](https://arxiv.org/pdf/1406.2661.pdf)
 
@@ -43,3 +49,4 @@ So finally we can get the following pseudo-code for the simple GAN:
 [pseudo]: https://github.com/s-abdullah/FirstGAN/blob/master/images/pseudo.png 
 [dloss]: https://github.com/s-abdullah/FirstGAN/blob/master/images/disc.png 
 [game]: https://github.com/s-abdullah/FirstGAN/blob/master/images/minimax.png 
+[bce]: https://github.com/s-abdullah/FirstGAN/blob/master/images/bce.png 
