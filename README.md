@@ -8,7 +8,7 @@ GAN's basically consist of three main component:
 
 ## 1. Discriminative Network
 The simplest part of GAN is the discriminative network. This is the neural network that tries to learn to differentiate between the True and False inputs. This is the simplest because it is alike any other DL netwrok that one might train. This is also the main motivator of the whole system. This network basically pushes out other network (Generative Network) to learn to "generate" better putputs that can not be differentiated from actual outputs. Hence we want the error of the Discrimnative Network to eventually fall which in the ideal case mean that out Generative Network is getting beeter at produceing fakes which is the whole point of GAN's.
-
+The only difference in the Discriminator is that instead of predicting the class, it will be binary classification i.e. whether its a "True" example or "False".
 
 ## 2. Generative Network
 
