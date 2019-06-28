@@ -16,15 +16,19 @@ The only difference in the Discriminator is that instead of predicting the class
 ## 3. Loss
 From the Original paper we see that the we need to do stachastic gradient ascent on the following fro the discrminator 
 since its a binary predictor:
+
 ![alt text][dloss]
 
 And for the generator the loss would be a descent of the following: 
+
 ![alt text][gloss]
 
 And as the Paper states, the overall mathematical equation comes out to this minimax game:
+
 ![alt text][game]
 
 So finally we can get the following pseudo-code for the simple GAN:
+
 ![alt text][pseudo]
 
 ## Resources
