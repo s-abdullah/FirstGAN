@@ -15,6 +15,8 @@ The only difference in the Discriminator is that instead of predicting the class
 
 ## Resources
 [Original Paper on GAN by Ian GoodFellow](https://arxiv.org/pdf/1406.2661.pdf)
+
 [Tutoial#1 from Medium that was Majorly followed](https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f)
+
 [Turoial#2 from Skymind that was refernce](https://skymind.ai/wiki/generative-adversarial-network-gan)
 
