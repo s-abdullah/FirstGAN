@@ -14,7 +14,8 @@ The only difference in the Discriminator is that instead of predicting the class
 
 
 ## 3. Loss
-From the Original paper we see that the we need to do stachastic gradient ascent on the following fro the discrminator since its a binary predictor:
+From the Original paper we see that the we need to do stachastic gradient ascent on the following fro the discrminator 
+since its a binary predictor:
 ![alt text][dloss]
 
 And for the generator the loss would be a descent of the following: 
