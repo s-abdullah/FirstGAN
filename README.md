@@ -33,7 +33,7 @@ So finally we can get the following pseudo-code for the simple GAN:
 
 We will use binary cross entropy loss for both. This is very simply explained in Tutorial#1. 
 
-![alt text][bce | width="240x" height="25px"]
+![alt text][bce]
 
 Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE has negative attached hence gradient is decent in discrimniator loss)
 
@@ -51,6 +51,6 @@ Notes on the loss being used:
 [pseudo]: https://github.com/s-abdullah/FirstGAN/blob/master/images/pseudo.png 
 [dloss]: https://github.com/s-abdullah/FirstGAN/blob/master/images/disc.png 
 [game]: https://github.com/s-abdullah/FirstGAN/blob/master/images/minimax.png 
-[bce]: https://github.com/s-abdullah/FirstGAN/blob/master/images/bce.png 
+[bce]: https://github.com/s-abdullah/FirstGAN/blob/master/images/bce.png | width=240px | height=25px
 [note]: https://github.com/s-abdullah/FirstGAN/blob/master/images/forloss.jpg 
 
