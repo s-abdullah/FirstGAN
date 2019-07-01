@@ -33,7 +33,7 @@ So finally we can get the following pseudo-code for the simple GAN:
 
 We will use binary cross entropy loss for both. This is very simply explained in Tutorial#1. 
 
-![alt text][bce]{:width="240x" height="25px"}
+![alt text][bce]{width="240x" height="25px"}
 
 Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE has negative attached hence gradient is decent in discrimniator loss)
 
