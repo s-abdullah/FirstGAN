@@ -33,7 +33,7 @@ So finally we can get the following pseudo-code for the simple GAN:
 
 We will use binary cross entropy loss for both. This is very simply explained in Tutorial#1. 
 
-![alt text][bce]
+![alt text][bce width="240x" height="25px"]
 
 Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE has negative attached hence gradient is decent in discrimniator loss)
 
@@ -42,7 +42,7 @@ Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE 
 
 [Tutoial#1 from Medium that was Majorly followed](https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f)
 
-[Turoial#2 from Skymind that was refernce](https://skymind.ai/wiki/generative-adversarial-network-gan)
+[Turoial#2 from Skymind that was reference](https://skymind.ai/wiki/generative-adversarial-network-gan)
 
 Notes on the loss being used:
 ![alt text][note]
