@@ -17,11 +17,11 @@ The generator network is more interesting. The input to the generator is a laten
 From the Original paper we see that the we need to do stachastic gradient ascent on the following fro the discrminator 
 since its a binary predictor:
 
-![alt text][dloss]
+![alt text][gloss]
 
 And for the generator the loss would be a descent of the following: 
 
-![alt text][gloss]
+![alt text][dloss]
 
 And as the Paper states, the overall mathematical equation comes out to this minimax game:
 
@@ -35,7 +35,7 @@ We will use binary cross entropy loss for both. This is very simply explained in
 
 ![alt text][bce]
 
-Replace Y = 1 for Discriminator and Y = 0 for generator. (Mx = min of negative)
+Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE has negative attached hence gradient is decent in discrimniator loss)
 
 ## Resources
 [Original Paper on GAN by Ian GoodFellow](https://arxiv.org/pdf/1406.2661.pdf)
