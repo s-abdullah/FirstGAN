@@ -45,7 +45,7 @@ Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE 
 [Turoial#2 from Skymind that was refernce](https://skymind.ai/wiki/generative-adversarial-network-gan)
 
 Notes on the loss being used:
-![alt text][forloss]
+![alt text][note]
 
 [gloss]: https://github.com/s-abdullah/FirstGAN/blob/master/images/gen.png 
 [pseudo]: https://github.com/s-abdullah/FirstGAN/blob/master/images/pseudo.png 
