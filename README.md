@@ -7,11 +7,11 @@ GAN's basically consist of three main component:
 
 
 ## 1. Discriminative Network
-The simplest part of GAN is the discriminative network. This is the neural network that tries to learn to differentiate between the True and False inputs. This is the simplest because it is alike any other DL netwrok that one might train. This is also the main motivator of the whole system. This network basically pushes out other network (Generative Network) to learn to "generate" better putputs that can not be differentiated from actual outputs. Hence we want the error of the Discrimnative Network to eventually fall which in the ideal case mean that out Generative Network is getting beeter at produceing fakes which is the whole point of GAN's.
+The simplest part of GAN is the discriminative network. This is the neural network that tries to learn to differentiate between the True and False inputs. This is the simplest because it is like any other DL netrrok that one might train. This is also the main motivator of the whole system. This network basically pushes out other network (Generative Network) to learn to "generate" better outputs that can not be differentiated from actual outputs. Hence we want the error of the Discrimnative Network to eventually fall which in the ideal case mean that out Generative Network is getting better at produceing fakes which is the whole point of GAN's.
 The only difference in the Discriminator is that instead of predicting the class, it will be binary classification i.e. whether its a "True" example or "False".
 
 ## 2. Generative Network
-The generator network is more interesting. The input to the generator is a latent variale vector which the network will learn to transform into a good "fake". So the ouput od the network should be example the same size and value range as the input to the discriminator.
+The generator network is more interesting. The input to the generator is a latent variale vector which the network will learn to transform into a good "fake". So the output of the network should be example the same size and value range as the input to the discriminator.
 
 ## 3. Loss
 From the Original paper we see that the we need to do stachastic gradient ascent on the following fro the discrminator 
