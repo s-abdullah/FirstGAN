@@ -41,7 +41,7 @@ Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE 
 To get comfortbale with the Vanilla GAN and see some output,this was the result of a short training on the MNIST dataset:
 
 #### Generated Output before Learning
-![alt text][mnist_initial]
+![alt text][mnist_init]
 
 #### Generated Output After 200 epochs
 ![alt text][mnist_final]
