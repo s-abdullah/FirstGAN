@@ -37,6 +37,8 @@ We will use binary cross entropy loss for both. This is very simply explained in
 
 Replace Y = 1 for real-data and Y = 0 for fake-data. (Mx = min of negative, BCE has negative attached hence gradient is decent in discrimniator loss)
 
+## Vanilla GAN
+
 ### Sample Run On MNIST
 To get comfortbale with the Vanilla GAN and see some output,this was the result of a short training on the MNIST dataset:
 
@@ -46,8 +48,33 @@ To get comfortbale with the Vanilla GAN and see some output,this was the result 
 #### Generated Output After 200 epochs
 ![alt text][mnist_final]
 
-###
+### Run on Alphabet data
 The purpose of this little project was to run on a custom alphabet dataset that I coillected for a project years ago, this is the result of training on it.
+
+#### Generated Output before Learning
+![alt text][alpha_init]
+
+#### Generated Output After 200 epochs
+![alt text][alpha_final]
+
+## DCGAN 
+Write about the DCGAN here
+
+#### Generated Output before Learning
+![alt text][dc_mnist_init]
+
+#### Generated Output After 70 epochs
+![alt text][dc_mnist_final]
+
+### Run on Alphabet data
+The purpose of this little project was to run on a custom alphabet dataset that I coillected for a project years ago, this is the result of training on it.
+
+#### Generated Output before Learning
+![alt text][dc_alpha_init]
+
+#### Generated Output After 200 epochs
+![alt text][dc_alpha_final]
+
 
 ## Resources
 [Original Paper on GAN by Ian GoodFellow](https://arxiv.org/pdf/1406.2661.pdf)
@@ -65,6 +92,13 @@ Notes on the loss being used:
 [game]: https://github.com/s-abdullah/FirstGAN/blob/master/images/minimax.png 
 [bce]: https://github.com/s-abdullah/FirstGAN/blob/master/images/bce.png
 [note]: https://github.com/s-abdullah/FirstGAN/blob/master/images/forloss.jpg 
+
 [mnist_init]: https://github.com/s-abdullah/FirstGAN/blob/master/images/initial.png 
 [mnist_final]: https://github.com/s-abdullah/FirstGAN/blob/master/images/final.png  
+[alpha_init]: https://github.com/s-abdullah/FirstGAN/blob/master/images/a_initial.png 
+[alpha_final]: https://github.com/s-abdullah/FirstGAN/blob/master/images/a_final.png  
 
+[dc_mnist_init]: https://github.com/s-abdullah/FirstGAN/blob/master/images/dc_mnist_initial.png 
+[dc_mnist_final]: https://github.com/s-abdullah/FirstGAN/blob/master/images/dc_mnist_final.png  
+[dc_alpha_init]: https://github.com/s-abdullah/FirstGAN/blob/master/images/a_initial.png 
+[dc_alpha_final]: https://github.com/s-abdullah/FirstGAN/blob/master/images/a_final.png  
