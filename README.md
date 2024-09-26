@@ -58,12 +58,21 @@ The purpose of this little project was to run on a custom alphabet dataset that 
 ![alt text][alpha_final]
 
 ## DCGAN 
-Write about the DCGAN here
+DCGAN differs from the vanilla GAN in the following aspects:
+- All pooling and fully connected layers are removed
+- Pooling layers are replaced by strided convolutions (conv2d) in Discriminator and (transposeconv2d) fractionla strided convolutions in the Generator
+- BatchNorm is used in both networks
+- ReLU activations is used in generator except the output which usess tanh
+- Leaky ReLU in discrimintor
+
+### Addtional Tips from the paper
+- Use Adam optimizer with lowered learned rate and explicit momemtum
+- Initial model weights with Normal distribution
 
 #### Generated Output before Learning
 ![alt text][dc_mnist_init]
 
-#### Generated Output After 70 epochs
+#### Generated Output After 20 epochs
 ![alt text][dc_mnist_final]
 
 ### Run on Alphabet data
@@ -99,5 +108,5 @@ Notes on the loss being used:
 
 [dc_mnist_init]: https://github.com/s-abdullah/FirstGAN/blob/master/images/dc_mnist_initial.png 
 [dc_mnist_final]: https://github.com/s-abdullah/FirstGAN/blob/master/images/dc_mnist_final.png  
-[dc_alpha_init]: https://github.com/s-abdullah/FirstGAN/blob/master/images/a_initial.png 
-[dc_alpha_final]: https://github.com/s-abdullah/FirstGAN/blob/master/images/a_final.png  
+[dc_alpha_init]: https://github.com/s-abdullah/FirstGAN/blob/master/images/dc_alpha_initial.png 
+[dc_alpha_final]: https://github.com/s-abdullah/FirstGAN/blob/master/images/dc_alpha_final.png  
