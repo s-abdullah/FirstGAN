@@ -49,7 +49,7 @@ To get comfortbale with the Vanilla GAN and see some output,this was the result 
 ![alt text][mnist_final]
 
 ### Run on Alphabet data
-The purpose of this little project was to run on a custom alphabet dataset that I coillected for a project years ago, this is the result of training on it.
+The purpose of this little project was to run on a custom alphabet dataset that I collected for a project years ago, this is the result of training on it.
 
 #### Generated Output before Learning
 ![alt text][alpha_init]
@@ -60,12 +60,12 @@ The purpose of this little project was to run on a custom alphabet dataset that 
 ## DCGAN 
 DCGAN differs from the vanilla GAN in the following aspects:
 - All pooling and fully connected layers are removed
-- Pooling layers are replaced by strided convolutions (conv2d) in Discriminator and (transposeconv2d) fractionla strided convolutions in the Generator
+- Pooling layers are replaced by strided convolutions (conv2d) in Discriminator and (transposeconv2d) fractional strided convolutions in the Generator
 - BatchNorm is used in both networks
 - ReLU activations is used in generator except the output which usess tanh
 - Leaky ReLU in discrimintor
 
-### Addtional Tips from the paper
+#### Addtional Tips from the paper
 - Use Adam optimizer with lowered learned rate and explicit momemtum
 - Initial model weights with Normal distribution
 
@@ -87,9 +87,13 @@ DCGAN differs from the vanilla GAN in the following aspects:
 ## Resources
 [Original Paper on GAN by Ian GoodFellow](https://arxiv.org/pdf/1406.2661.pdf)
 
+[Original Paper on DCGAN](https://arxiv.org/pdf/1511.06434)
+
 [Tutoial#1 from Medium that was Majorly followed](https://medium.com/ai-society/gans-from-scratch-1-a-deep-introduction-with-code-in-pytorch-and-tensorflow-cb03cdcdba0f)
 
 [Turoial#2 from Skymind that was reference](https://skymind.ai/wiki/generative-adversarial-network-gan)
+
+[Turoial#3 from Pytorch that was reference](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html?highlight=dcgan)
 
 Notes on the loss being used:
 ![alt text][note]
