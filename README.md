@@ -67,7 +67,6 @@ Write about the DCGAN here
 ![alt text][dc_mnist_final]
 
 ### Run on Alphabet data
-The purpose of this little project was to run on a custom alphabet dataset that I coillected for a project years ago, this is the result of training on it.
 
 #### Generated Output before Learning
 ![alt text][dc_alpha_init]
